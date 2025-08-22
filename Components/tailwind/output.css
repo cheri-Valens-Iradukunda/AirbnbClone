@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-orange-700: oklch(55.3% 0.195 38.402);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -198,8 +199,14 @@
   .relative {
     position: relative;
   }
+  .sticky {
+    position: sticky;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
   }
   .top-2 {
     top: calc(var(--spacing) * 2);
@@ -215,6 +222,9 @@
   }
   .left-5 {
     left: calc(var(--spacing) * 5);
+  }
+  .z-10 {
+    z-index: 10;
   }
   .col-span-1 {
     grid-column: span 1 / span 1;
@@ -520,6 +530,9 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
